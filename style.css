@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;    
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.801);
+    color: var(--cor2);
+}   
+
+:root {
+    --cor0: #00ff6a;
+    --cor1: #06402B;
+    --cor01: #052e1fe8;
+    --cor2: #ffffff;
+    --header: #022519;
+    --corNull: #000000;
+    --corBorda: #01140dfd;
+    --corBotao: #ffffff00;
+}
+
+body {
+    background:
+    linear-gradient(rgba(36, 36, 36, 0.753)),
+    url("imagens/background.jpg");
+
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin: 20px 100px;
+    flex: 1;
+}
+
+
+header {
+    color: var(--cor2);
+    display: flex;
+    background-color: var(--header);
+    border-radius: 15px;
+    border: 1px solid black;
+
+    min-height: 90px;
+
+}
+
+.imagemsite {
+    width: 65px;
+    height: 65px;
+    background-image: url(imagens/dino.png);
+    background-size: cover;
+    margin: 15px 0px 15px 20px;
+    transition: 0.20s;
+}
+
+.imagemsite:hover {
+    background-image: url(imagens/dinohover.png);
+}
+
+.esquerda {
+    align-items: center;
+    display: flex;
+}
+
+#titulo {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+
+
+.direita {
+    margin-left: auto;
+    display: flex;
+}
+
+.direita ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.direita a {
+    padding: 5px;
+    color: var(--cor2);
+    display: flex;
+    gap: 5px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.direita a:hover {
+    color: var(--cor0);
+}
+
+.titulogrande {
+    color: var(--cor2);
+    margin:50px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+/* -------------------------------------------------------------------------------------------------- */
+
+.bandeija {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: var(--cor01);
+    margin: 0 150px;
+    display: flex;
+    align-items: center;
+}
+
+.prato1 {
+    display: flex;
+    margin-right: auto;
+}
+
+#Dinossauro {
+    display: inline-flex;
+    color: var(--cor2);
+    background-color: rgb(53, 53, 53);
+    font-size: 20px;
+    width: 300px;
+    height: 30px;
+}
+
+.acompanhamento{
+    display: flex;
+    align-items: center;
+}
+
+.acompanhamento p {
+    color: var(--cor2);
+    font-size: 40px;
+}
+
+.prato2 {
+    margin-left: auto;
+    display: flex;
+}
+
+#Dinossauro2 {
+    color: var(--cor2);
+    background-color: rgb(53, 53, 53);
+    font-size: 20px;
+    width: 300px;
+    height: 30px;
+}
+
+
+/* Footer */ 
+
+footer {
+    color: var(--cor2);
+    display: flex;
+    min-height: 45px;
+    background-color: var(--cor1);
+    flex-shrink: 0;
+}
+
+/* Esquerda do rodapé */
+
+.esquerdaF {
+    display: flex;
+    align-items: center;
+}
+
+.esquerdaF p {
+    padding-left: 10px;
+    text-shadow: 0px 0px 0px;
+}
+
+.esquerdaF strong {
+    text-shadow: 0px 0px 0px;
+}
+
+/* Direita do rodapé - Créditos */
+
+.direitaF {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+.direitaF h1 {
+    font-size: 18px;
+    text-shadow: 0px 0px 0px;
+    font-weight: normal;
+
+}
+
+.direitaF p {
+    text-shadow: 0px 0px 0px;    
+    text-indent: 10px;
+    font-size: 14px;
+}
