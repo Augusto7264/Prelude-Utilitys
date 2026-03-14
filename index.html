@@ -9,7 +9,6 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body class="Calculadora">
     <div class="container">
@@ -21,7 +20,10 @@
                     </p>
                 </div>
                 <div class="direita">
-                    <ul>
+
+                    <button class="menuB" id="menuBtn" onclick="toggleMenu()">☰</button>
+
+                    <ul id="menu">
                         <li><a href="index.html">Início</a></li>
                         <li><a href="PatchNotes.html">Patch Notes</a></li>
                         <li><a href="#" target="_self">Bulhufas</a></li>
@@ -55,8 +57,6 @@
                             <div class="calcularB"><button onclick="calcular()" class="calcB">Calcular</button></div>
                             <h3 class="resultado" id="resultado"></h3>
                         </div>
-
-                        <script src="scripts.js"></script>
                 </div>
             </div>
         </main>
@@ -66,6 +66,9 @@
         <p>Site feito por <strong>Gabriel Augusto</strong> e <strong>Guilherme Hipolito</strong></p>
     </div class="esquerdaF">
 </footer>
+
+<script src="scripts.js"></script>
+
 </body>
 
 </html>
