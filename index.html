@@ -8,11 +8,10 @@
     <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body class="calculadora">
+<body class="Calculadora">
     <div class="container">
         <header>
                 <div class="esquerda">
@@ -30,7 +29,6 @@
                 </div>
         </header>
 
-
         <main>
             <div class="titulogrande">
                 <p>
@@ -38,34 +36,28 @@
                 </p>
             </div>
             <div class="bandeija">
-                <div class="prato1">
-                    <div class="comidaprincipal1">
-                        <select name="Dinossauros" id="Dinossauro">
-                            <option value="Escolha um Dinossauro">Escolha um Dinossauro</option>
-                            <option value="Rex">Rex</option>
-                            <option value="Spino">Spino</option>
-                            <option value="Giga">Giga</option>
-                            </select>
-                    </div>
-                    <div class="sobremesa1">
-                     
-                    </div>
-                </div>
-                <div class="acompanhamento">
-                    <p>➡</p>
-                </div>
-                <div class="prato2">
-                    <div class="comidaprincipal2">
-                    <select name="Dinossauros" id="Dinossauro2">
-                            <option value="Escolha um Dinossauro">Escolha um Dinossauro</option>
-                            <option value="Rex">Rex</option>
-                            <option value="Spino">Spino</option>
-                            <option value="Giga">Giga</option>
-                            </select>
-                    </div>
-                    <div class="sobremesa2">
+                <div class="calculadora">
 
-                    </div>
+                    <h2 id="tituloCalc">Calculadora de Dano</h2>
+                    
+                        <div class="calcInfo">
+                            Atacante
+                            <select class="calc" id="atacante"></select>
+                            Ataque
+                            <select class="calc" id="tipoAtaque">
+                            <option value="normal">Normal</option>
+                            <option value="especial">Especial</option>
+                            </select>
+                            <br><br>
+                            Alvo
+                            <select class="calc" id="alvo"></select>
+                            4
+                            <br><br>
+                            <button onclick="calcular()" class="calc">Calcular</button>
+                            <h3 id="resultado"></h3>
+                        </div>
+
+                        <script src="calc.js"></script>
                 </div>
             </div>
         </main>
@@ -74,10 +66,6 @@
     <div class="esquerdaF">
         <p>Site feito por <strong>Gabriel Augusto</strong> e <strong>Guilherme Hipolito</strong></p>
     </div class="esquerdaF">
-    <div class="direitaF">
-        <h1>Créditos:</h1>
-        <p>Obrigados ao Apertus O Cuatrus iCorremus</p>
-    </div>
 </footer>
 </body>
 
