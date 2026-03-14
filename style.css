@@ -124,7 +124,7 @@ header{
     border:1px solid var(--corBorda);
     border-radius:10px;
     padding:50px;
-    background-color:#ff00ff;
+    background-color:var(--cor01);
     margin:0 auto;
 }
 
