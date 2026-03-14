@@ -338,7 +338,7 @@ footer{
 /* RESPONSIVIDADE */
 /* ============================= */
 
-@media (max-width:800px){
+@media (max-width:740px){
 
 .container{
     margin:10px;
@@ -456,6 +456,30 @@ header{
 
 footer{
     margin-top: 10px;
+}
+
+/* Ajuste da calculadora no celular */
+
+.bandeija{
+    width:92%;
+    max-width:420px;
+    margin:18px auto;
+}
+
+.calculadora{
+    width:100%;
+    max-width:380px;
+    margin:0 auto;
+}
+
+.calcInfo{
+    padding:18px;
+}
+
+#Dinossauro,
+#Dinossauro2{
+    width:100%;
+    max-width:100%;
 }
 
 }
