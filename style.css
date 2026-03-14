@@ -137,6 +137,7 @@ header{
     background-size: cover;
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.685);
 }
 
 #tituloCalc {
