@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+/* ============================= */
+/* RESET E CONFIGURAÇÕES GERAIS */
+/* ============================= */
+
+*{
+    margin:0;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow:2px 2px 0 rgba(0,0,0,0.8);
+    color:var(--cor2);
+}
+
+:root{
+    --cor0:#00ff6a;
+    --cor1:#06402B;
+    --cor01:#052e1fe8;
+    --cor2:#ffffff;
+    --header:#022519;
+    --corNull:#000000;
+    --corBorda:#01140dfd;
+}
+
+body{
+    background:
+    linear-gradient(rgba(36,36,36,0.75)),
+    url("imagens/background.jpg");
+
+    background-size:cover;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* ============================= */
+/* CONTAINER */
+/* ============================= */
+
+.container{
+    margin:20px 100px;
+    flex:1;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+header{
+    display:flex;
+    background-color:var(--header);
+    border-radius:15px;
+    border:1px solid black;
+    min-height:90px;
+}
+
+/* logo */
+
+.imagemsite{
+    width:65px;
+    height:65px;
+    background-image:url(imagens/dino.png);
+    background-size:cover;
+    margin:15px 0 15px 20px;
+    transition:0.2s;
+}
+
+.imagemsite:hover{
+    background-image:url(imagens/dinohover.png);
+}
+
+.esquerda{
+    display:flex;
+    align-items:center;
+}
+
+#titulo{
+    margin-left:20px;
+    font-size:20px;
+}
+
+/* menu */
+
+.direita{
+    margin-left:auto;
+    display:flex;
+}
+
+.direita ul{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    margin-right:20px;
+    padding:0;
+}
+
+.direita a{
+    padding:5px;
+    text-decoration:none;
+    transition:0.25s;
+}
+
+.direita a:hover{
+    color:var(--cor0);
+}
+
+/* ============================= */
+/* TITULOS */
+/* ============================= */
+
+.titulogrande{
+    text-align:center;
+    font-size:40px;
+}
+
+.titulogrande p{
+    margin:50px 0;
+}
+
+/* ============================= */
+/* PAGINA CALCULADORA */
+/* ============================= */
+
+.bandeija{
+    border:1px solid var(--corBorda);
+    border-radius:10px;
+    padding:50px;
+    background-color:var(--cor01);
+    margin:0 auto;
+}
+
+/* layout calculadora */
+
+.prato1{
+    display:flex;
+    margin-right:auto;
+}
+
+.prato2{
+    display:flex;
+    margin-left:auto;
+}
+
+.acompanhamento{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.acompanhamento p{
+    font-size:40px;
+}
+
+/* selects */
+
+#Dinossauro,
+#Dinossauro2{
+    background-color:rgb(53,53,53);
+    font-size:20px;
+    width:300px;
+    height:30px;
+}
+
+/* Bandeija da calculadora */
+
+.calculadora .bandeija{
+    display:flex;
+    align-items:center;
+}
+
+/* Bandeija da página de patch */
+
+.patch .bandeija{
+    width: 50%;
+    margin:0px auto;
+    text-align:center;
+    padding-bottom: 18px;
+}
+/* ============================= */
+/* PAGINA PATCH NOTES */
+/* ============================= */
+
+.videos{
+    border-radius:10px;
+    background-color:var(--cor01);
+    text-align:center;
+}
+
+#titulosH2{
+    font-size:24px;
+    padding-top:25px;
+}
+
+.videos iframe{
+    width:90%;
+    padding-bottom:18px;
+    border-top:5px solid var(--corBorda);
+    border: 5px;
+}
+
+#maisPatches iframe{
+    width:80%;
+    border-top:5px solid var(--corBorda);
+}
+
+#ultimoPatch{
+    margin-bottom:15px;
+}
+
+/* botão mostrar mais */
+
+#maisPatches{
+    display:none;
+}
+
+.btnPatch{
+    background-color:transparent;
+    font-size:16px;
+    display:flex;
+    margin:0 auto 0px auto;
+    padding:0 10px;
+    cursor:pointer;
+    border-radius:6px;
+    border:none;
+    transition:0.25s;
+}
+
+.btnPatch:hover{
+    color:var(--cor0);
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer{
+    display:flex;
+    min-height:45px;
+    background-color:var(--cor1);
+    flex-shrink:0;
+}
+
+.esquerdaF{
+    display:flex;
+    align-items:center;
+}
+
+.esquerdaF p{
+    padding-left:10px;
+    text-shadow:none;
+}
+
+.esquerdaF strong{
+    text-shadow:none;
+}
+
+.direitaF{
+    display:flex;
+    align-items:center;
+    margin-left:auto;
+    padding-right:10px;
+}
+
+.direitaF h1{
+    font-size:18px;
+    text-shadow:none;
+    font-weight:normal;
+}
+
+.direitaF p{
+    text-shadow:none;
+    text-indent:10px;
+    font-size:14px;
+}
+
+/* ============================= */
+/* RESPONSIVIDADE */
+/* ============================= */
+
+@media (max-width:800px){
+
+.container{
+    margin:10px;
+}
+
+header{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding:10px 0;
+}
+
+.esquerda{
+    flex-direction:column;
+}
+
+#titulo{
+    margin:10px 0;
+    font-size:18px;
+}
+
+.direita{
+    margin:0;
+    width:100%;
+    justify-content:center;
+}
+
+.direita ul{
+    flex-direction:column;
+    gap:2px;
+    margin:10px 0;
+}
+
+.patch .bandeija{
+    width: 80%;
+    margin:0px auto;
+    text-align:center;
+    padding-bottom: 18px;
+}
+
+.videos{
+    border-radius:10px;
+    background-color:var(--cor01);
+    text-align:center;
+}
+
+#titulosH2{
+    font-size:24px;
+    padding-top:25px;
+}
+
+.videos iframe{
+    width:100%;
+    padding-bottom:18px;
+    border-top:5px solid var(--corBorda);
+    border: 5px;
+}
+
+#maisPatches iframe{
+    width:100%;
+    border-top:5px solid var(--corBorda);
+}
+
+#ultimoPatch{
+    margin-bottom:15px;
+}
+
+}
