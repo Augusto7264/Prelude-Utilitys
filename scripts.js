@@ -94,7 +94,7 @@ const dinos = {
 "Stego": {peso:6000, vida:6000, dano:1000},
 "Stego elder": {peso:6500, vida:6500, dano:1000},
 
-"Styraco": {peso:6500, vida:6500, dano:400},
+"Styraco": {peso:3500, vida:3500, dano:400},
 
 "Tarchia": {peso:5500, vida:5000, dano:900},
 
