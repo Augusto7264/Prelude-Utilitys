@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<body class="Calculadora">
+<body class="calculadoraBody">
     <div class="container">
         <header>
                 <div class="esquerda">
@@ -24,15 +24,15 @@
                     <button class="menuB" id="menuBtn" onclick="toggleMenu()">☰</button>
 
                     <ul id="menu">
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="PatchNotes.html">Patch Notes</a></li>
-                        <li><a href="#" target="_self">Bulhufas</a></li>
+                        <li><a href="index.html" target="_self">Início</a></li>
+                        <li><a href="PatchNotes.html" target="_self">Patch Notes</a></li>
+                        <li><a href="Cards.html" target="_self">Cards</a></li>
                     </ul>
                 </div>
         </header>
 
         <main>
-            <div class="titulogrande">
+            <div class="tituloPrincipal">
                 <p>
                     Prelude Realismo
                 </p>
@@ -54,21 +54,21 @@
                             Alvo
                             <select class="calc" id="alvo"></select>
                             <br><br>
-                            <div class="calcularB"><button onclick="calcular()" class="calcB">Calcular</button></div>
-                            <h3 class="resultado" id="resultado"></h3>
+                            <div class="areaButton"><button onclick="calcular()" class="calcBt">Calcular</button></div>
+                            <h3 class="resultadoArea" id="resultado"></h3>
                         </div>
                 </div>
             </div>
         </main>
     </div>
-    <footer>
-    <div class="esquerdaF">
-        <p>Site feito por <strong>Gabriel Augusto</strong> e <strong>Guilherme Hipolito</strong></p>
-    </div class="esquerdaF">
-</footer>
 
-<script src="scripts.js"></script>
+    <footer>
+        <div class="esquerdaF">
+            <p>Site feito por <strong>Gabriel Augusto</strong> e <strong>Guilherme Hipolito</strong></p>
+        </div class="esquerdaF">
+    </footer>
+
+    <script src="scripts.js"></script>
 
 </body>
-
 </html>
