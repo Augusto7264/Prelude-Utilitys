@@ -303,6 +303,17 @@ footer{
     font-size:14px;
 }
 
+/* PÁGINA - CARDS */
+
+.cardsBody {
+    text-align: center;
+}
+
+#tituloCards {
+    font-size: 46px;
+    margin-top: 200px;
+}
+
 /* ============================= */
 /* RESPONSIVIDADE */
 /* ============================= */
