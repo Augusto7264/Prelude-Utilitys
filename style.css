@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-/* ============================= */
-/* RESET E CONFIGURAÇÕES GERAIS */
-/* ============================= */
+/*  CONFIGURAÇÕES GERAIS */
 
 *{
     margin:0;
@@ -12,7 +10,7 @@
 }
 
 :root{
-    --cor0:#00ff6a;
+    --corDestaque:#00ff6a;
     --cor1:#06402B;
     --cor01:#052e1fe8;
     --cor2:#ffffff;
@@ -24,8 +22,8 @@
 
 body{
     background:
-    linear-gradient(rgba(36,36,36,0.75)),
-    url("imagens/background.jpg");
+    linear-gradient(rgba(36, 36, 36, 0.452)),
+    url("imagens/background3.png");
 
     background-size:cover;
     min-height:100vh;
@@ -33,24 +31,32 @@ body{
     flex-direction:column;
 }
 
-/* ============================= */
-/* CONTAINER */
-/* ============================= */
+
+/* LAYOUT GERAL */
+
 
 .container{
     margin:20px 100px;
     flex:1;
 }
 
-/* ============================= */
+.bandeija{
+    border:1px solid var(--corBorda);
+    border-radius:10px;
+    padding:10px;
+    background-color:rgba(0, 0, 0, 0.493);
+    margin:0 auto;
+    width: 30%;
+}
+
 /* HEADER */
-/* ============================= */
+
 
 header{
     display:flex;
     background-color:var(--header);
-    border-radius:15px;
-    border:1px solid black;
+    border:2px solid var(--cor01);
+    border-radius: 10px;
     min-height:90px;
 
     position: sticky;
@@ -58,7 +64,7 @@ header{
     z-index: 1000;
 }
 
-/* logo */
+/* Logo */
 
 .imagemsite{
     width:65px;
@@ -83,16 +89,7 @@ header{
     font-size:20px;
 }
 
-.menuB {
-    display: none;
-    font-size: 30px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-/* menu */
+/* Menu */
 
 .direita{
     margin-left:auto;
@@ -119,36 +116,37 @@ header{
 }
 
 .direita a:hover{
-    color:var(--cor0);
+    color:var(--corDestaque);
 }
 
-/* ============================= */
-/* TITULOS */
-/* ============================= */
+.menuB {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
 
-.titulogrande{
+/* TÍTULOS GERAIS */
+
+
+.tituloPrincipal{
     text-align:center;
     font-size:40px;
 }
 
-.titulogrande p{
+.tituloPrincipal p{
     margin:50px 0;
 }
 
-/* ============================= */
-/* PAGINA CALCULADORA */
-/* ============================= */
+/* PÁGINA: CALCULADORA */
 
-.bandeija{
-    border:1px solid var(--corBorda);
-    border-radius:10px;
-    padding:10px;
-    background-color:var(--cor01);
-    margin:0 auto;
-    width: 50%;
+
+.calculadoraBody .bandeija{
+    display:flex;
+    align-items:center;
 }
-
-/* layout calculadora */
 
 .calculadora {
     margin: auto;
@@ -162,7 +160,7 @@ header{
 #tituloCalc {
     margin-bottom: 10px;
     text-align: center;
-  text-shadow:2px 4px 2px rgba(0, 0, 0, 0.452);
+    text-shadow:2px 4px 2px rgba(0, 0, 0, 0.452);
 }
 
 .calcInfo{
@@ -171,75 +169,48 @@ header{
     border-radius: 8px;
     margin: 10px;
     padding: 15px;
-    
 }
 
 .calc {
-    color: rgb(255, 255, 255);
     font-family: sans-serif;
-    text-shadow: 0px 0px 0px;
+    text-shadow: none;
     background-color: var(--header);
-    border: 1px solid var(--cor0);
+    border: 1px solid var(--corDestaque);
     border-radius: 5px;
 }
 
-.calcularB{
+.areaButton{
     text-align: center;
 }
 
-.calcB{
-    color: rgb(255, 255, 255);
+.calcBt{
     font-family: sans-serif;
-    text-shadow: 0px 0px 0px;
+    text-shadow: none;
     background-image: url(imagens/fundoBotaoCalc.png);
     width: 100px;
     height: 30px;
     border-radius: 5px;
-
 }
 
-#resultado {
+.resultadoArea {
+    font-family: 'Times New Roman', Times, serif;
     margin: 5px;
     padding: 10px;
 }
 
-.resultado {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.danoFinal {
+#danoFinal {
     color: yellow;
 }
 
 
-/* selects */
-
-#Dinossauro,
-#Dinossauro2{
-    background-color:rgb(53,53,53);
-    font-size:20px;
-    width:300px;
-    height:30px;
-}
-
-/* Bandeija da calculadora */
-
-.Calculadora .bandeija{
-    display:flex;
-    align-items:center;
-}
-
-/* Bandeija da página de patch */
+/* PÁGINA: PATCH NOTES */
 
 .patch .bandeija{
     width: 50%;
-    margin:0px auto;
+    margin:0 auto;
     text-align:center;
     padding-bottom: 18px;
 }
-/* ============================= */
-/* PAGINA PATCH NOTES */
-/* ============================= */
 
 .videos{
     border-radius:10px;
@@ -256,7 +227,6 @@ header{
     width:90%;
     padding-bottom:18px;
     border-top:5px solid var(--corBorda);
-    border: 5px;
 }
 
 #maisPatches iframe{
@@ -268,7 +238,7 @@ header{
     margin-bottom:15px;
 }
 
-/* botão mostrar mais */
+/* Botão */
 
 #maisPatches{
     display:none;
@@ -278,7 +248,7 @@ header{
     background-color:transparent;
     font-size:16px;
     display:flex;
-    margin:0 auto 0px auto;
+    margin:0 auto;
     padding:0 10px;
     cursor:pointer;
     border-radius:6px;
@@ -287,17 +257,16 @@ header{
 }
 
 .btnPatch:hover{
-    color:var(--cor0);
+    color:var(--corDestaque);
 }
 
-/* ============================= */
 /* FOOTER */
-/* ============================= */
+
 
 footer{
     display:flex;
     min-height:45px;
-    background-color:var(--cor1);
+    background-color:transparent;
     flex-shrink:0;
 }
 
@@ -340,26 +309,48 @@ footer{
 
 @media (max-width:740px){
 
+
+/* Geral */
+
 .container{
     margin:10px;
 }
-
-.patch .bandeija{
-    width: 60%;
-    margin:0px auto;
-    text-align:center;
-    padding-bottom: 18px;
-}
-
-
-/* Header das páginas*/
 
 header{
     display: flex;
     align-items: center;
 }
 
-/* Botao menu Header */
+.menuB {
+    display: block;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
+}
+
+.esquerda{
+    display:flex;
+    align-items:center;
+}
+
+#titulo{
+    margin-left: 10px;
+    font-size:18px;
+}
+
+.direita{
+    margin-left:auto;
+    margin-right:24px;
+}
+
+footer{
+    margin-top:10px;
+}
+
+/* Menu Hamburguer */
 
 .direita ul{
     display: none;
@@ -379,86 +370,14 @@ header{
 
     transform: translateX(100%);
     transition: 0.35s;
-
-    z-index: 999;
 }
 
 .direita ul.ativo{
     transform: translateX(0);
-    display: flex;
+    display:flex;
 }
 
-.menuB {
-    display: block;
-    font-size: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 1001;
-    position: relative;
-}
-
-.esquerda{
-    display: flex;
-    align-items: center;
-    flex-direction:row;
-}
-
-#titulo{
-    margin-left: 10px;
-    font-size:18px;
-}
-
-.direita{
-    margin-left: auto;
-    width:auto;
-    margin-right: 24px;
-}
-
-.direita ul{
-    flex-direction:column;
-    gap:2px;
-    margin:10px 0;
-}
-
-/* Videos do Patch Notes*/
-
-.videos{
-    border-radius:10px;
-    background-color:var(--cor01);
-    text-align:center;
-}
-
-#titulosH2{
-    font-size:24px;
-    padding-top:24px;
-}
-
-.videos iframe{
-    width:100%;
-    padding-bottom:18px;
-    border-top:5px solid var(--corBorda);
-    border: 5px;
-}
-
-/* Videos - Mostrar mais */
-
-#maisPatches iframe{
-    width:100%;
-    border-top:5px solid var(--corBorda);
-}
-
-#ultimoPatch{
-    margin-bottom:15px;
-}
-
-/* Footer */
-
-footer{
-    margin-top: 10px;
-}
-
-/* Ajuste da calculadora no celular */
+/*  PÁGINA - CALCULADORA */
 
 .bandeija{
     width:92%;
@@ -479,7 +398,24 @@ footer{
 #Dinossauro,
 #Dinossauro2{
     width:100%;
-    max-width:100%;
 }
+
+/* PÁGINA - PATCH NOTES */
+
+.patch .bandeija{
+    width:60%;
+}
+
+.videos iframe{
+    width:100%;
+}
+
+#maisPatches iframe{
+    width:100%;
+}
+
+/* PÁGINA - CARDS */
+
+
 
 }
