@@ -62,7 +62,7 @@ const dinos = {
 
 "Bajada": {peso:9500, vida:9500, dano:130, especial:800},
 
-"Camara": {peso:20000, vida:20000, dano:100},
+"Camara": {peso:20000, vida:20000, dano:100, especial:3090},
 
 "Deino": {peso:7000, vida:7000, dano:210, especial:700},
 
@@ -86,10 +86,10 @@ const dinos = {
 "Para": {peso:4000, vida:3600, dano:330, especial:750},
 "Para elder": {peso:4250, vida:4250, dano:330, especial:750},
 
-"Puerta": {peso:49895, vida:49895, dano:5000},
+"Puerta": {peso:49895, vida:49895, dano:5000, especial:5000},
 
-"Shant": {peso:11793, vida:11793, dano:250},
-"Shant elder": {peso:12500, vida:12500, dano:250},
+"Shant": {peso:11793, vida:11793, dano:250, especial:1100},
+"Shant elder": {peso:12500, vida:12500, dano:250, especial:1100},
 
 "Stego": {peso:6000, vida:6000, dano:1000},
 "Stego elder": {peso:6500, vida:6500, dano:1000},
