@@ -226,12 +226,12 @@ header{
 .videos iframe{
     width:90%;
     padding-bottom:18px;
-    border-top:5px solid var(--corBorda);
+    border: 0px;
 }
 
 #maisPatches iframe{
     width:80%;
-    border-top:5px solid var(--corBorda);
+    border: 0px;
 }
 
 #ultimoPatch{
