@@ -163,6 +163,11 @@ header{
     text-shadow:2px 4px 2px rgba(0, 0, 0, 0.452);
 }
 
+#recado {
+    font-size: 13px;
+    text-align: center;
+}
+
 .calcInfo{
     background-color: rgba(0, 0, 0, 0.363);
     border: 1px solid rgba(255, 255, 255, 0.308);
@@ -199,9 +204,8 @@ header{
 }
 
 #danoFinal {
-    color: var(--corDestaque);
+    color: var(--corDestaque)
 }
-
 
 /* PÁGINA: PATCH NOTES */
 
@@ -218,7 +222,7 @@ header{
     text-align:center;
 }
 
-#titulosH2{
+.titulosH2{
     font-size:24px;
     padding-top:25px;
 }
@@ -303,8 +307,8 @@ footer{
     font-size:14px;
 }
 
-/* PÁGINA - CARDS */
 
+/*
 .cardsBody {
     text-align: center;
 }
@@ -312,10 +316,78 @@ footer{
 #tituloCards {
     font-size: 46px;
     margin-top: 200px;
+} */
+
+
+/* PÁGINA - CARDS */
+
+.containerCards {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+
+    margin-top: 50px;
 }
 
+.cardCarn {
+    background-image: url(imagens/cards/backCardsCarn.png);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cardHerb {
+    background-image: url(imagens/cards/backCardsHerb.jpg);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.imagem {
+    width: 240px;
+    height: 270px;
+    margin: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.cardStatus {
+    height: 125px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #2bff0036;
+    border: 2px solid black;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.iconesCard {
+    width: 18px;
+    height: 18px;
+}
+
+.ulCards {
+    list-style: none;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+#spinoCard {
+    background-image: url(imagens/cards/Card.jpeg);
+    background-size: cover;
+}
+
+#paraCard {
+    background-image: url(imagens/cards/cardPara.jpg);
+    background-size: cover;
+}
+
+
 /* ============================= */
-/* RESPONSIVIDADE */
+/* RESPONSIVIDADE                */
 /* ============================= */
 
 @media (max-width:740px){
@@ -425,8 +497,7 @@ footer{
     width:100%;
 }
 
-/* PÁGINA - CARDS */
-
-
-
 }
+
+/* FUTURA PÁGINA CARDS */
+
