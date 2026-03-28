@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela dano legacy</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/logo-prelude.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 </head>
 <body class="calculadoraBody">
     <div class="container">
@@ -16,7 +17,7 @@
                 <div class="esquerda">
                     <div class="imagemsite"></div>
                     <p id="titulo">
-                        The Isle - Calculador
+                        The Isle - Calculadora <br>
                     </p>
                 </div>
                 <div class="direita">
@@ -41,22 +42,23 @@
                 <div class="calculadora">
 
                     <h2 id="tituloCalc">Calculadora de Dano</h2>
+                    <p id="recado">Em breve, todos os dinos atualizados</p>
                     
-                        <div class="calcInfo">
-                            Atacante
-                            <select class="calc" id="atacante"></select>
-                            Ataque
-                            <select class="calc" id="tipoAtaque">
-                            <option value="normal">Normal</option>
-                            <option value="especial">Especial</option>
-                            </select>
-                            <br><br>
-                            Alvo
-                            <select class="calc" id="alvo"></select>
-                            <br><br>
-                            <div class="areaButton"><button onclick="calcular()" class="calcBt">Calcular</button></div>
-                            <h3 class="resultadoArea" id="resultado"></h3>
-                        </div>
+                    <div class="calcInfo">
+                        Atacante
+                        <select class="calc" id="atacante"></select>
+                        Ataque
+                        <select class="calc" id="tipoAtaque">
+                        <option value="normal">Normal</option>
+                        <option value="especial">Especial</option>
+                        </select>
+                        <br><br>
+                        Alvo
+                        <select class="calc" id="alvo"></select>
+                        <br><br>
+                        <div class="areaButton"><button onclick="calcular()" class="calcBt">Calcular</button></div>
+                        <h3 class="resultadoArea" id="resultado"></h3>
+                    </div>
                 </div>
             </div>
         </main>
@@ -69,6 +71,5 @@
     </footer>
 
     <script src="scripts.js"></script>
-
 </body>
 </html>
