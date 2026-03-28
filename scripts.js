@@ -14,6 +14,8 @@ const dinos = {
 
 "Bary": {peso:1800, vida:1800, dano:150},
 
+"Carcha": {peso:6200, vida:6300, dano:665},
+
 "Carno": {peso:2170, vida:2170, dano:200},
 "Carno elder": {peso:2500, vida:2500, dano:230},
 
@@ -21,6 +23,8 @@ const dinos = {
 "Cerato elder": {peso:2400, vida:2400, dano:370},
 
 "Conca": {peso:1200, vida:1250, dano:220},
+
+"Dakota": {peso:1000, vida:1300, dano:180},
 
 "Dillo": {peso:1400, vida:1050, dano:150},
 
@@ -30,6 +34,8 @@ const dinos = {
 "Herrera": {peso:550, vida:500, dano:50},
 
 "Mapu": {peso:6800, vida:6000, dano:750},
+
+"Microraptor": {peso:310, vida:350, dano:45},
 
 "Mirabillis": {peso:4500, vida:4500, dano:250},
 
